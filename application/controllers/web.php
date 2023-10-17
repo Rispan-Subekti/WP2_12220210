@@ -2,7 +2,7 @@
 class Web extends CI_Controller
 {
     function __construct(){
-        //code..
+        //code....
         parent::__construct();
     }
     public function index(){
