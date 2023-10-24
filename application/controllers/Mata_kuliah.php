@@ -1,8 +1,8 @@
 <?php
-class matakuliah extends CI_Controller{
+class Mata_Kuliah extends CI_Controller{
     public function index()
     {
-        $this->load->view('view-form-matakuliah');
+        $this->load->view('view_form_matakuliah');
     }
     public function cetak()
     {
@@ -17,7 +17,7 @@ class matakuliah extends CI_Controller{
 
 		if ($this->form_validation->run() == FALSE)
                 {
-                        $this->load->view('view-form-matakuliah');
+                        $this->load->view('view_form_matakuliah');
                 }
                 else
                 {
@@ -27,7 +27,7 @@ class matakuliah extends CI_Controller{
 						  'sks' => $this->input->post('sks')
 						  ];
 				  
-				    $this->load->view('view-data-matakuliah', $data);
+				    $this->load->view('view_data_matakuliah', $data);
                 }
     }
 }

@@ -1,20 +1,14 @@
 <?php
-class matakuliah extends CI_Controller{
+class Matakuliah extends CI_Controller{
     public function index()
     {
         $this->load->view('view-form-matakuliah');
     }
     public function cetak()
     {
-        $this->form_validation->set_rules('kode', 'Kode Matakuliah', 'trim|required|numeric|min_length[3]',
-        array('required' => '%s Wajib Diisikan.',
-        'numeric' => '%s Wajib diisikan angka.',
-        'min_length' => '%s Wajib Diisikan 3 karakter.'));
-		$this->form_validation->set_rules('nama', 'Nama Matakuliah', 'required[Web Programming]',
-        array('required' => '%s Wajib Diisikan.',));
-		$this->form_validation->set_rules('sks', 'SKS', 'required',
-        array('required' => '%s Wajib Diisikan.',));
-
+        $this->form_validation->set_rules('kode', ''Kode Matakuliah', 'reguired');
+		$this->form_validation->set_rules('nama', ''Nama Matakuliah', 'reguired');
+		$this->form_validation->set_rules('sks', ''SKS', 'reguired');
 		if ($this->form_validation->run() == FALSE)
                 {
                         $this->load->view('view-form-matakuliah');
@@ -29,5 +23,7 @@ class matakuliah extends CI_Controller{
 				  
 				    $this->load->view('view-data-matakuliah', $data);
                 }
+			}
+		}
     }
 }

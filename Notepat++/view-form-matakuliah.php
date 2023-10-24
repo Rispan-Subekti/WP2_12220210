@@ -22,17 +22,16 @@
     <th>Kode MTK</th>
     <td>:</td>
     <td>
-    <input type="text" name="kode" id="kode" value="<?php echo set_value('kode'); ?>">
+    <input type="text" name="kode" id="kode" >
     </td>
-    <td><?php echo form_error('kode'); ?></td>
+	<?php echo validation_errors(); ?>
     </tr>
     <tr>
     <th>Nama MTK</th>
     <td>:</td>
     <td>
-    <input type="text" name="nama" id="nama" value="<?php echo set_value('nama'); ?>">
+    <input type="text" name="nama" id="nama" >
     </td>
-    <td><?php echo form_error('nama'); ?></td>
     </tr>
     <tr>
     <th>SKS</th>
@@ -45,7 +44,6 @@
     <option value="4">4</option>
     </select>
     </td>
-    <td><?php echo form_error('sks'); ?></td>
     </tr>
     <tr>
     <td colspan="3" align="center">
