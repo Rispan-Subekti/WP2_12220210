@@ -21,31 +21,42 @@
 
 
 
-<!-- Nav Item - Dashboard -->
-<li class="nav-item">
-  <style media="screen">
+<!-- Nav Item - Dashboard --> 
+<li class="nav-item"> 
+    <style media="screen"> 
+ 
+    </style> 
+        <a class="nav-link pb-0" href="<?= base_url('buku/kategori'); ?>"> 
+           <i class="fas fa-book-open"></i> 
+           <span>Kategori Buku</span></a> 
+</li> 
 
-  </style>
-    <a class="nav-link pb-0" href="<?= base_url('Buku/kategori'); ?>">
-       <i class="fas fa-book-open"></i>
-        <span>Kategori Buku</span></a>
-</li>
 
-    <!-- Nav Item - Dashboard -->
-    <li class="nav-item">
-      <style media="screen">
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+            <style media="screen">
 
-      </style>
-        <a class="nav-link pb-0" href="<?= base_url('buku'); ?>">
-           <i class="fas fa-book"></i>
-            <span>Data Buku</span></a>
-    </li>
+            </style>
+                <a class="nav-link pb-0" href="<?= base_url('buku'); ?>">
+                <i class="fas fa-book"></i>
+                    <span>Data Buku</span></a>
+        </li>
 
-    <li class="nav-item">
-        <a class="nav-link pb-0" href="<?= base_url('user/anggota'); ?>">
-            <i class="fas fa-users"></i>
-            <span>Data Anggota</span></a>
-    </li>
+        <li class="nav-item">
+            <a class="nav-link pb-0" href="<?= base_url('user/anggota'); ?>">
+                <i class="fas fa-users"></i>
+                <span>Data Anggota</span></a>
+        </li>
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item">
+            <style media="screen">
+
+            </style>
+                <a class="nav-link pb-0" href="<?= base_url('buku'); ?>">
+                <i class="fas fa-book"></i>
+                    <span>Laporan</span></a>
+        </li>
 
 
 </li>
